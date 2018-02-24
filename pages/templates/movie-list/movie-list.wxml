@@ -1,0 +1,15 @@
+<template name='movie-list'>
+<view class='movie-main'>
+  <view class='movie-header'>
+    <text>{{ title }}</text>
+    <text>更多</text>
+  </view>
+  <view class='movie-body'>
+    <view class='movie-body-info' wx:for='{{ movies }}'  wx:key='idx' wx:for-item="item">
+      <image src='{{ item.images.large }}'></image>
+      <text>{{ item.original_title }}</text>
+      <text>{{ item.rating.stars }}</text>
+    </view>
+  </view>
+  </view>
+</template> 
