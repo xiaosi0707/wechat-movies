@@ -13,7 +13,7 @@ Page({
       movies: []
     },
     top250: {
-      title: 'top250',
+      title: '豆瓣top250',
       movies: []
     }
   },
