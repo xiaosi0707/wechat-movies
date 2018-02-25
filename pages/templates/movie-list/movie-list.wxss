@@ -22,7 +22,7 @@
   float: left;
   margin: 20rpx 40rpx 0 0;
 }
-.movie-body-info:last-child {
+.movie-body-info:nth-child(3n + 0) {
   margin-right: 0;
 }
 .movie-body-info image {

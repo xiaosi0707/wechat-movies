@@ -2,7 +2,7 @@
 <view class='movie-main'>
   <view class='movie-header'>
     <text>{{ title }}</text>
-    <navigator url="list/list">更多</navigator>
+    <navigator url="list/list?title={{ title }}" >更多</navigator>
   </view>
   <view class='movie-body'>
     <view class='movie-body-info' wx:for='{{ movies }}'  wx:key='idx' wx:for-item="item">

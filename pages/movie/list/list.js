@@ -12,9 +12,14 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log(options);
+    // 动态设置title
+    wx.setNavigationBarTitle({
+      title: options.title
+    })
     var _this = this;
     wx.request({
-      url: 'http://t.yushu.im/v2/movie/in_theaters?start=0&count=3',
+      url: 'http://t.yushu.im/v2/movie/in_theaters?start=0&count=20',
       header: {
         'content-type': 'application/text'
       },
