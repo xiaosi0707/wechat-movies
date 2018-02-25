@@ -1,7 +1,8 @@
 {
   "pages":[
-    "pages/article/article",
-    "pages/movie/index"
+    "pages/movie/index",
+    "pages/movie/list/list",
+    "pages/article/article"
   ],
   "window":{
     "backgroundTextStyle":"light",

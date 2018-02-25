@@ -1,0 +1,4 @@
+<import src='../../templates/more-list/more-list.wxml' />
+<view>
+  <template is='more-list' data='{{ movies }}' />
+</view>

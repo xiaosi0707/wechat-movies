@@ -1,0 +1,40 @@
+.movie-header {
+  width: 95%;
+  margin: 12rpx auto;
+  height: 36rpx;
+  line-height: 36rpx;
+}
+.movie-header text {
+  font-size: 27rpx;
+  color: #666666;
+}
+.movie-header navigator {
+  float: right;
+  font-size: 27rpx;
+  color: #1F4BA5;
+}
+.movie-body {
+  width: 95%;
+  margin: 0 auto;
+}
+.movie-body-info {
+  width: 210rpx;
+  float: left;
+  margin: 20rpx 40rpx 0 0;
+}
+.movie-body-info:last-child {
+  margin-right: 0;
+}
+.movie-body-info image {
+  width: 100%;
+  height: 300rpx
+}
+.movie-body-info text {
+  display: block;
+  font-size: 27rpx;
+  color: #8A8A8A;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
