@@ -1,1 +1,2 @@
 @import "../../templates/movie-list/movie-list.wxss";
+@import "../../templates/more-list/more-list.wxss";

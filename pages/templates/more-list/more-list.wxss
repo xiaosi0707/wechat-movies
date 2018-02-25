@@ -1,0 +1,8 @@
+.scroll-lower-text {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  font-size: 24rpx;
+  color: #939393;
+  margin: 24px 0;
+}

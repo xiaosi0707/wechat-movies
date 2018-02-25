@@ -16,6 +16,7 @@
 .movie-body {
   width: 95%;
   margin: 0 auto;
+  overflow: hidden;
 }
 .movie-body-info {
   width: 210rpx;
@@ -37,4 +38,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+.scroll-height {
+  height: 1320rpx;
 }
