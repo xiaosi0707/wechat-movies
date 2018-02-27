@@ -1,11 +1,13 @@
 <template name='more-list'>
 <scroll-view class='movie-main scroll-height' scroll-y='true' scroll-x='false' bindscrolltolower='onScrollLower'>
   <view class='movie-body'>
+  <navigator url='movie-detail'>
     <view class='movie-body-info' wx:for='{{ movies.dataList }}'  wx:key='idx' wx:for-item="item">
       <image src='{{ item.images.large }}'></image>
       <text>{{ item.original_title }}</text>
       <text>{{ item.rating.stars }}</text>
     </view>
+    </navigator>
   </view>
   <view class='scroll-lower-text' wx:if='{{ movies.dataList.length && movies.total === movies.dataList.length }}'>我也是有底线滴(～￣(OO)￣)ブ</view>
   </scroll-view>
