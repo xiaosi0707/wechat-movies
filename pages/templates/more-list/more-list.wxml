@@ -2,7 +2,7 @@
 <scroll-view class='movie-main scroll-height' scroll-y='true' scroll-x='false' bindscrolltolower='onScrollLower'>
   <view class='movie-body'>
   <navigator url='movie-detail'>
-    <view class='movie-body-info' wx:for='{{ movies.dataList }}'  wx:key='idx' wx:for-item="item">
+    <view class='movie-body-info' wx:for='{{ searchResult }}'  wx:key='idx' wx:for-item="item">
       <image src='{{ item.images.large }}'></image>
       <text>{{ item.original_title }}</text>
       <text>{{ item.rating.stars }}</text>

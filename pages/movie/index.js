@@ -16,6 +16,7 @@ Page({
       title: '豆瓣top250',
       movies: []
     },
+    searchResult: [],
     containerShow: true,
     searchPanellShow: false
   },
@@ -79,5 +80,25 @@ Page({
       containerShow: true,
       searchPanellShow: false
     })
-  } 
+  } ,
+  // 搜索
+  onBingChange: function(event) {
+    var text = event.detail.value;
+    var _this = this;
+    wx.request({
+      url: 'http://t.yushu.im/v2/movie/search?q=' + text,
+      header: {
+        'content-type': 'application/text'
+      },
+      success: function (res) {
+        console.log(res.data.subjects)
+        _this.setData({
+          'searchResult': res.data.subjects
+        })
+      },
+      fail: function (err) {
+        console.log(err)
+      }
+    })
+  }
 })

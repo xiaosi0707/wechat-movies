@@ -31,7 +31,10 @@ body {
   padding-bottom: 12rpx;
 }
 .search-pannel {
+  width: 100%;
   position: absolute;
   top: 80rpx;
+  background: red;
+  height: 240rpx;
 }
 
