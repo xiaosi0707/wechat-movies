@@ -64,7 +64,7 @@
 }
 
 .summary{
-    margin-top: 40rpx;
+    margin-top: 140rpx;
     color: #777777;
 }
 
@@ -116,9 +116,8 @@
 
 .cast{
     margin-left:40rpx;
-    display:flex;
-    flex-direction: column;
     margin-top:50rpx;
+    
 }
 
 .cast-font{

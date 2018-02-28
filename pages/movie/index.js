@@ -15,7 +15,9 @@ Page({
     top250: {
       title: '豆瓣top250',
       movies: []
-    }
+    },
+    containerShow: true,
+    searchPanellShow: false
   },
 
   /**
@@ -65,5 +67,17 @@ Page({
           console.log(err)
         }
       })
-  }
+  },
+  onBindFocus: function (event) {
+    this.setData({
+      containerShow: false,
+      searchPanellShow: true
+    })
+  },
+  onCancelImgTap: function(event) {
+    this.setData({
+      containerShow: true,
+      searchPanellShow: false
+    })
+  } 
 })

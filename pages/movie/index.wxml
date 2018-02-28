@@ -1,10 +1,15 @@
 <import src='../templates/movie-list/movie-list.wxml' />
+<import src='../templates/more-list/more-list.wxml' />
 <view class='search'>
   <icon type='search' size='17'></icon>
-  <input type='text' placeholder='你的名字' placeholder-style="color:#D2D3D2; font-size: 30rpx;" confirm-type='搜索'></input>
+  <input type='text' placeholder='你的名字' placeholder-style="color:#D2D3D2; font-size: 30rpx;" confirm-type='搜索' bindfocus='onBindFocus'></input>
+  <image src='../imgs/icon/xx.png' bindtap='onCancelImgTap'></image>
 </view>
-<view>
+<view wx:if="{{ containerShow }}">
   <template is='movie-list' data='{{ ...isFilm }}' />
   <template is='movie-list' data='{{ ...isSoon }}' />
   <template is='movie-list' data='{{ ...top250 }}' />
+</view>
+<view class='search-pannel' wx:if="{{ searchPanellShow }}">
+  <template is='more-list' data='{{ ...isFilm }}' />
 </view>
