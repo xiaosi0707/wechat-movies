@@ -12,6 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    
     var _this = this;
     var movieId = options.id;
     wx.request({
@@ -25,6 +26,9 @@ Page({
         //   'movies.dataList': res.data.subjects,
         //   'movies.total': res.data.total
         // })
+        wx.setNavigationBarTitle({
+          title: res.data.original_title
+        })
         _this.setData({
           movieInfo: res.data
         })
