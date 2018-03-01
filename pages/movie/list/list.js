@@ -99,5 +99,8 @@ Page({
         console.log(err)
       }
     })
+  },
+  onTapMore: function() {
+    
   }
 })
