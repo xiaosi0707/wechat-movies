@@ -16,9 +16,12 @@ Page({
       title: '豆瓣top250',
       movies: []
     },
-    searchResult: [],
+    movies: {
+      dataList: []
+    },
     containerShow: true,
-    searchPanellShow: false
+    searchPanellShow: false,
+    val: 'hello'
   },
 
   /**
@@ -76,6 +79,7 @@ Page({
     })
   },
   onCancelImgTap: function(event) {
+    console.log(event);
     this.setData({
       containerShow: true,
       searchPanellShow: false
@@ -93,7 +97,7 @@ Page({
       success: function (res) {
         console.log(res.data.subjects)
         _this.setData({
-          'searchResult': res.data.subjects
+          'movies.dataList': res.data.subjects
         })
       },
       fail: function (err) {
