@@ -1,0 +1,13 @@
+.star{
+  margin-top: 12rpx;
+  float: left;
+  width: 108rpx;
+  height: 20rpx;
+  margin-left: 2rpx;
+  margin-right: 12rpx;
+}
+.star-score {
+  margin-top: 7rpx;
+  font-size: 24rpx;
+  color: #41456D;
+}

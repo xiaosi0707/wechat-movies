@@ -1,0 +1,6 @@
+<template name='star'>
+  <view>
+    <image class='star' src='/pages/imgs/icon/none-star.png'></image>
+    <text class='star-score'>{{ item.rating.stars }}</text>
+  </view>
+</template>
