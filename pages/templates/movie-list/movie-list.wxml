@@ -5,7 +5,6 @@
     <navigator url="list/list?title={{ title }}" >更多</navigator>
   </view>
   <view class='movie-body'>
-  
     <view class='movie-body-info' wx:for='{{ movies }}'  wx:key='idx' wx:for-item="item">
     <navigator url='movie-detail/movie-detail?id={{ item.id }}'>
       <image src='{{ item.images.large }}'></image>
